@@ -7,7 +7,6 @@ import org.springframework.context.annotation.ComponentScan;
 import org.springframework.web.servlet.config.annotation.WebMvcConfigurer;
 
 @SpringBootApplication
-@EnableCaching
 @ComponentScan(basePackages = { "com.twa.flights.api" })
 public class App implements WebMvcConfigurer {
 
