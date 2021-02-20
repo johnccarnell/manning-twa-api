@@ -4,7 +4,7 @@ services:
     build: api-catalog/.
     container_name: api-catalog
     ports:
-     - 6080:6080
+     - 6070:6070
     restart: always 
     links:
       - api-catalog-db 
@@ -18,6 +18,15 @@ services:
       MYSQL_USER: 'root'
       MYSQL_PASSWORD: 'muppet'
       MYSQL_ROOT_PASSWORD: 'muppet'
+ 
+  api-catalog-cache:
+    build: varnish/.
+    container_name: api-catalog-cache
+    ports:
+     - 6080:80
+    restart: always    
+    depends_on:
+      - api-catalog
       
   api-clusters:
     build: api-clusters/.
@@ -62,4 +71,5 @@ services:
     container_name: api-provider-beta
     ports:
      - 9080:9080
-    restart: always      
+    restart: always        
+    

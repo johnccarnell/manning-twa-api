@@ -18,7 +18,7 @@ jetty:
     
 connector:
    catalog:
-      host: api-catalog:6080
+      host: api-catalog-cache:80
       responseTimeout: 2000
       connectionTimeout: 2000
       readTimeout: 2000
