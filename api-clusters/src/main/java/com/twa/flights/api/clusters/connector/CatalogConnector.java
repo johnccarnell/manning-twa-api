@@ -37,6 +37,7 @@ public class CatalogConnector {
     }
 
     public CityDTO getCityByCode(String code) {
+        LOGGER.info("I am calling the API catalog with code {}", code);
         final long readTimeout = configuration.getReadTimeout();
 
         HttpClient httpClient = HttpClient.create()
@@ -49,6 +50,7 @@ public class CatalogConnector {
         WebClient client = WebClient.builder().defaultHeader(HttpHeaders.CONTENT_TYPE, MediaType.APPLICATION_JSON_VALUE)
                 .clientConnector(connector).build();
 
+        LOGGER.info("URI being called: {}", configuration.getHost().concat(GET_CITY_BY_CODE).concat(code));
         return client.get().uri(configuration.getHost().concat(GET_CITY_BY_CODE).concat(code)).retrieve()
                 .onStatus(HttpStatus::isError, clientResponse -> {
                     LOGGER.error("Error while calling endpoint {} with status code {}", GET_CITY_BY_CODE,

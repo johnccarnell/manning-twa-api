@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="api-itineraries-search" />
+        <module name="api-provider-beta" />
+        <module name="api-catalog" />
+        <module name="api-pricing" />
+        <module name="api-provider-alpha" />
+        <module name="api-clusters" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="api-catalog" target="11" />
+      <module name="api-clusters" target="11" />
+      <module name="api-flights" target="1.5" />
+      <module name="api-itineraries-search" target="11" />
+      <module name="api-pricing" target="11" />
+      <module name="api-provider-alpha" target="11" />
+      <module name="api-provider-beta" target="11" />
+    </bytecodeTargetLevel>
+  </component>
+</project>

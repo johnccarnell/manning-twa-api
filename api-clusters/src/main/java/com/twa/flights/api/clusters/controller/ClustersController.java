@@ -34,7 +34,7 @@ public class ClustersController implements ClustersResources {
 
     @Override
     public ResponseEntity<List<ItineraryDTO>> availability(AvailabilityRequestDTO request) {
-        LOGGER.debug("Obtain all the itineraries with price");
+        LOGGER.info("Obtain all the itineraries with price");
         requestValidator.validate(request);
 
         List<ItineraryDTO> response = clustersService.availability(request);

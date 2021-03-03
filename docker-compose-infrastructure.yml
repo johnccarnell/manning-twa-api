@@ -22,4 +22,5 @@ services:
       MYSQL_PASSWORD: 'muppet'
       MYSQL_ROOT_PASSWORD: 'muppet'        
     ports:
-     - 3311:3306      
+     - 3311:3306
+

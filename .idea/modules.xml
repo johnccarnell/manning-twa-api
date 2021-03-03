@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/api-catalog/api-catalog.iml" filepath="$PROJECT_DIR$/api-catalog/api-catalog.iml" />
+      <module fileurl="file://$PROJECT_DIR$/api-clusters/api-clusters.iml" filepath="$PROJECT_DIR$/api-clusters/api-clusters.iml" />
+      <module fileurl="file://$PROJECT_DIR$/api-flights.iml" filepath="$PROJECT_DIR$/api-flights.iml" />
+      <module fileurl="file://$PROJECT_DIR$/api-itineraries-search/api-itineraries-search.iml" filepath="$PROJECT_DIR$/api-itineraries-search/api-itineraries-search.iml" />
+      <module fileurl="file://$PROJECT_DIR$/api-pricing/api-pricing.iml" filepath="$PROJECT_DIR$/api-pricing/api-pricing.iml" />
+      <module fileurl="file://$PROJECT_DIR$/api-provider-alpha/api-provider-alpha.iml" filepath="$PROJECT_DIR$/api-provider-alpha/api-provider-alpha.iml" />
+      <module fileurl="file://$PROJECT_DIR$/api-provider-beta/api-provider-beta.iml" filepath="$PROJECT_DIR$/api-provider-beta/api-provider-beta.iml" />
+    </modules>
+  </component>
+</project>

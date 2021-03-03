@@ -18,7 +18,7 @@ jetty:
     
 connector:
    catalog:
-      host: api-catalog:6080
+      host: api-catalog-varnish:80
       responseTimeout: 2000
       connectionTimeout: 2000
       readTimeout: 2000
@@ -31,4 +31,11 @@ connector:
       host: api-itineraries-search:7080
       responseTimeout: 10000
       connectionTimeout: 10000
-      readTimeout: 10000         
+      readTimeout: 10000
+
+cache:
+  configuration:
+    CATALOG_CITY:
+      refreshAfterWriteTime: 5 #MINUTES
+      expireAfterWriteTime: 10 #MINUTES
+      maxSize: 180
